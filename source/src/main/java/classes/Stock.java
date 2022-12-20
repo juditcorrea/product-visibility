@@ -6,7 +6,7 @@ import com.opencsv.bean.CsvBindByPosition;
 
 public class Stock {
     @CsvBindByPosition(position = 0)
-	private int sizeId;
+	private int sizeId = -1;
     @CsvBindByPosition(position = 1)
 	private BigInteger quantity = new BigInteger("0");
 	

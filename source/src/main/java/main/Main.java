@@ -3,18 +3,16 @@ package main;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
-
 import classes.Product;
 import classes.Size;
 import classes.Stock;
 import productVisibility.csvReader;
 import productVisibility.visibilityController;
+import static constants.constants.productUrl;
+import static constants.constants.sizeUrl;
+import static constants.constants.stockUrl;
 
 public class Main {
-	private final static String productUrl = "source/product.csv";
-	private final static String sizeUrl = "source/size.csv";
-	private final static String stockUrl = "source/stock.csv";
 	
 	public static void main(String[] args) throws IOException {
 		List<Product> products = initializeData();
