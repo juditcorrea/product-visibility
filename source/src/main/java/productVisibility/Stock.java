@@ -8,7 +8,7 @@ public class Stock {
     @CsvBindByPosition(position = 0)
 	private int sizeId;
     @CsvBindByPosition(position = 1)
-	private BigInteger quantity;
+	private BigInteger quantity = new BigInteger("0");
 	
 	public int getSizeId() {
 		return sizeId;

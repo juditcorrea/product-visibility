@@ -1,6 +1,5 @@
 package productVisibility;
 
-import com.opencsv.bean.CsvBindAndSplitByPosition;
 import com.opencsv.bean.CsvBindByPosition;
 import com.opencsv.bean.CsvCustomBindByName;
 import com.opencsv.bean.customconverter.ConvertGermanToBoolean;
@@ -20,6 +19,8 @@ public class Size {
     @PreAssignmentProcessor(processor = ConvertEmptyOrBlankStringsToDefault.class)
     @CsvCustomBindByName(converter = ConvertGermanToBoolean.class)
 	private Boolean special;
+
+	private Stock stock;
 	
 	public int getId() {
 		return id;
@@ -44,6 +45,12 @@ public class Size {
 	}
 	public void setSpecial(boolean special) {
 		this.special = special;
+	}
+	public Stock getStock() {
+		return stock;
+	}
+	public void setStock(Stock stock) {
+		this.stock = stock;
 	}
 
 }
