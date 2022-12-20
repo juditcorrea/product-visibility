@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
 
 import com.opencsv.bean.CsvToBeanBuilder;
 
+import classes.Product;
+import classes.Size;
+import classes.Stock;
+
 public class Main {
 	private final static String productUrl = "source/product.csv";
 	private final static String sizeUrl = "source/size.csv";

@@ -1,4 +1,4 @@
-package productVisibility;
+package utilities;
 
 import com.opencsv.bean.processor.StringProcessor;
 

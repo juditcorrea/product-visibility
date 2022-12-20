@@ -1,9 +1,11 @@
-package productVisibility;
+package classes;
 
 import com.opencsv.bean.CsvBindByPosition;
 import com.opencsv.bean.CsvCustomBindByName;
 import com.opencsv.bean.customconverter.ConvertGermanToBoolean;
 import com.opencsv.bean.processor.PreAssignmentProcessor;
+
+import utilities.ConvertEmptyOrBlankStringsToDefault;
 
 public class Size {
     @CsvBindByPosition(position = 0)

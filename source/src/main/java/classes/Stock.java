@@ -1,4 +1,4 @@
-package productVisibility;
+package classes;
 
 import java.math.BigInteger;
 

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import productVisibility.Product;
+import classes.Product;
 
 public class productVisibilityTest {
 	
