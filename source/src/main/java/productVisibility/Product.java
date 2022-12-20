@@ -2,8 +2,12 @@ package productVisibility;
 
 import java.math.BigInteger;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 public class Product {
+    @CsvBindByPosition(position = 0)
 	private int id;
+    @CsvBindByPosition(position = 1)
 	private BigInteger sequence;
 	private Size size;
 	private Stock stock;

@@ -20,6 +20,11 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+	      <groupId>com.opencsv</groupId>
+	      <artifactId>opencsv</artifactId>
+	      <version>5.3</version>
+	  </dependency>
 	</dependencies>
 
 	<build>
@@ -44,6 +49,20 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- https://mvnrepository.com/artifact/net.sf.jsefa/jsefa -->
+
+			<!--<plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>5.0.3</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.h2database</groupId>
+						<artifactId>h2</artifactId>
+						<version>1.4.191</version>
+					</dependency>
+				</dependencies>
+			</plugin>-->
 		</plugins>
 	</build>
 
